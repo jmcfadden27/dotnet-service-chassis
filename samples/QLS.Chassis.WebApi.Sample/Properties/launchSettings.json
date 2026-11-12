@@ -1,0 +1,21 @@
+{
+  "profiles": {
+    "QLS.Chassis.WebApi.Sample": {
+      "commandName": "Project",
+      "launchBrowser": false,
+      "applicationUrl": "http://localhost:5080",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "postgres": {
+      "commandName": "Project",
+      "launchBrowser": false,
+      "applicationUrl": "http://localhost:5080",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ConnectionStrings__AppDb": "Host=localhost;Port=5432;Database=app;Username=app"
+      }
+    }
+  }
+}

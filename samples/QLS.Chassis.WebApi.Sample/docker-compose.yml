@@ -1,0 +1,14 @@
+# Local Postgres for the sample's "postgres" launch profile. Trust authentication: for local development only.
+#   docker compose -f samples/QLS.Chassis.WebApi.Sample/docker-compose.yml up -d
+#   docker compose -f samples/QLS.Chassis.WebApi.Sample/docker-compose.yml down -v
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: app
+      POSTGRES_DB: app
+      POSTGRES_HOST_AUTH_METHOD: trust
+    ports:
+      - "${CHASSIS_SAMPLE_DB_PORT:-5432}:5432"
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d:ro

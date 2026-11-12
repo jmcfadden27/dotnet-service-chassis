@@ -1,0 +1,12 @@
+<Project>
+  <!-- Shared by every project in the repository. Bump the version here. -->
+  <PropertyGroup>
+    <VersionPrefix>0.1.0</VersionPrefix>
+    <Authors>Jim McFadden</Authors>
+    <Copyright>Copyright (c) 2026 Jim McFadden</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/jmcfadden27/dotnet-service-chassis</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/jmcfadden27/dotnet-service-chassis</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+</Project>
